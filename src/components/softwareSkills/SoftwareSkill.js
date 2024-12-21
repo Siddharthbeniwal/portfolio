@@ -12,9 +12,18 @@ export default function SoftwareSkill() {
               <li
                 key={i}
                 className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
+                name={skills.skillName}>
+                {/* <i 
+                className={skills.fontAwesomeClassname}
+                style={{ color: skills.iconColor}}
+                ></i> */}
+
+<img
+                  src={skills.imageUrl} // Use the image path from the array
+                  alt={skills.skillName} // Add alt text for accessibility
+                  className="software-skill-image" // Add a CSS class to style the image
+                />
+                
                 <p>{skills.skillName}</p>
               </li>
             );
