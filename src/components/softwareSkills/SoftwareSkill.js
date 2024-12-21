@@ -2,7 +2,7 @@ import React from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
 
-export default function SoftwareSkill() {
+export default function SoftwareSkill({isDark}) {
   return (
     <div>
       <div className="software-skills-main-div">
@@ -12,19 +12,13 @@ export default function SoftwareSkill() {
               <li
                 key={i}
                 className="software-skill-inline"
-                name={skills.skillName}>
-                {/* <i 
-                className={skills.fontAwesomeClassname}
-                style={{ color: skills.iconColor}}
-                ></i> */}
+                name={skills.skillName}
+              >
+                <img src={skills.imageUrl} alt={skills.skillName} />
 
-<img
-                  src={skills.imageUrl} // Use the image path from the array
-                  alt={skills.skillName} // Add alt text for accessibility
-                  className="software-skill-image" // Add a CSS class to style the image
-                />
-                
-                <p>{skills.skillName}</p>
+                <p style={{color: isDark ? "#ffffff" : ""}}>
+                  {skills.skillName}
+                </p>
               </li>
             );
           })}
