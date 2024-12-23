@@ -23,7 +23,7 @@ const greeting = {
   username: "Siddharth Beniwal",
   title: "Hi, I'm Siddharth Beniwal",
   subTitle: emoji(
-    'A passionate Software Developer 🚀 with 3+ years of experience developing efficient, responsive, and feature-rich web applications using HTML5, CSS3, JavaScript(ES6), ReactJS and Redux.'
+    "A passionate Software Developer 🚀 with 3+ years of experience developing efficient, responsive, and feature-rich web applications using HTML5, CSS3, JavaScript(ES6), ReactJS and Redux."
   ),
   resumeLink:
     "https://drive.google.com/file/d/11f3eUJ24hfbHZXx26Hgz9fNilWep_bPo/view?usp=sharing", // Set to empty to hide the button
@@ -48,8 +48,9 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: 'My Skills',
-  subTitle: 'An ambitious developer, always growing and refining my skills to create dynamic and comprehensive web applications.',
+  title: "My Skills",
+  subTitle:
+    "An ambitious developer, always growing and refining my skills to create dynamic and comprehensive web applications.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -116,14 +117,15 @@ const educationInfo = {
     {
       schoolName: "Guru Gobind Singh Indraprastha University",
       logo: "ggsipu-logo.png",
-      subHeader: "Bachelor of Technology in Instrumentation and Control Engineering",
+      subHeader:
+        "Bachelor of Technology in Instrumentation and Control Engineering",
       duration: "2016 - 2020",
       desc: "Acquired in-depth knowledge of industrial automation, process control systems, and instrumentation engineering principles.",
       descBullets: [
         "Learned embedded systems, IoT, and Arduino, focusing on microcontrollers, sensors, and automation.",
         "Conducted a workshop on Arduino basics for students, sparking interest in technology."
       ]
-    },
+    }
   ]
 };
 
@@ -185,29 +187,43 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "My Projects",
+  subtitle: "Soome projects that I worked on",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: "project-images/food-express.png",
+      projectName: "Food Ordering App",
+      projectDesc:
+        "A dynamic food ordering web app developed using the MERN stack.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://foodexpress123.netlify.app/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: "project-images/to-do-list.png",
+      projectName: "To-do List",
+      projectDesc:
+        "A simple task organizing app created in React JS that allows user to add, edit or delete their to-do tasks.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://siddharth-todolist.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: "project-images/text-styler.png",
+      projectName: "Text Styler",
+      projectDesc:
+        "A simple text-styler app allows users to input text and apply various styles for easy formatting and customization of text.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://siddharth-textstyler.netlify.app/"
         }
       ]
     }
@@ -345,8 +361,8 @@ const contactInfo = {
   title: emoji("Contact Me"),
   // title: emoji("Contact Me 📧 |☎️"),
   subtitle: `Have something in mind? Whether it's a project or just a friendly hello, I’d love to hear from you!`,
-  number: '',
-  email_address: 'siddharthben16@gmail.com'
+  number: "",
+  email_address: "siddharthben16@gmail.com"
 };
 
 // Twitter Section
