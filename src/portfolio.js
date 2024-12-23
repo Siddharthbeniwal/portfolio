@@ -146,7 +146,7 @@ const techStack = {
     },
     {
       Stack: "Node JS",
-      progressPercentage: "42%"
+      progressPercentage: "38%"
     },
     {
       Stack: "Database",
@@ -166,7 +166,7 @@ const workExperiences = {
       company: "Infosys",
       companylogo: "infosys-logo.png",
       date: "November 2021 - Present",
-      desc: "Working as Frontend Developer",
+      desc: "Working as a Frontend Developer",
       descBullets: [
         "Building responsive and user-focused web applications using React JS, JavaScript, and Redux, with some exposure to Node JS, all within an Agile environment, collaborating with cross-functional teams to deliver high-performance solutions."
       ]
@@ -342,7 +342,7 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me 📧"),
+  title: emoji("Contact Me"),
   // title: emoji("Contact Me 📧 |☎️"),
   subtitle: `Have something in mind? Whether it's a project or just a friendly hello, I’d love to hear from you!`,
   number: '',
