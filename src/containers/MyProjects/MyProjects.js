@@ -1,22 +1,28 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import {bigProjects} from "../../portfolio";
-import { Fade } from 'react-reveal';
+import {Fade} from "react-reveal";
+import Modal from "react-modal";
 import StyleContext from "../../contexts/StyleContext";
 import "./MyProjects.scss";
 
-export default function MyProjects() {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
+// Modal.setAppElement("#root"); // Required for accessibility (set this to your app root element)
 
+export default function MyProjects() {
   const {isDark} = useContext(StyleContext);
-  if (!bigProjects.display) {
-    return null;
-  }
+
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [videoSrc, setVideoSrc] = useState("");
+
+  const openModal = videoUrl => {
+    setVideoSrc(videoUrl);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setVideoSrc("");
+  };
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
@@ -49,7 +55,7 @@ export default function MyProjects() {
                         src={project.image}
                         alt={project.projectName}
                         className="card-image"
-                      ></img>
+                      />
                     </div>
                   ) : null}
                   <div className="project-detail">
@@ -67,19 +73,21 @@ export default function MyProjects() {
                     </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
+                        {project.footerLink.map((link, i) => (
+                          <span
+                            key={i}
+                            className={
+                              isDark ? "dark-mode project-tag" : "project-tag"
+                            }
+                            onClick={() =>
+                              link.name === "See Video Demo"
+                                ? openModal(link.url)
+                                : window.open(link.url, "_blank").focus()
+                            }
+                          >
+                            {link.name}
+                          </span>
+                        ))}
                       </div>
                     ) : null}
                   </div>
@@ -88,6 +96,27 @@ export default function MyProjects() {
             })}
           </div>
         </div>
+
+        {/* Video Modal Starts here*/}
+        <Modal
+          isOpen={isModalOpen}
+          onRequestClose={closeModal}
+          className="video-modal"
+          overlayClassName="modal-overlay"
+        >
+          <div className="modal-content">
+            <button className="close-button" onClick={closeModal}>
+              &times;
+            </button>
+            <video
+              controls
+              src={videoSrc}
+              className="video-player"
+              autoPlay
+            ></video>
+          </div>
+        </Modal>
+        {/* Video Modal Ends here*/}
       </div>
     </Fade>
   );
