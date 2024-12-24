@@ -188,7 +188,7 @@ const openSource = {
 
 const bigProjects = {
   title: "My Projects",
-  subtitle: "Soome projects that I worked on",
+  subtitle: "Some projects that I worked on",
   projects: [
     {
       image: "project-images/food-express.png",
