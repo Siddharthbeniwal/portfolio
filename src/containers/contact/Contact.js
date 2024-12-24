@@ -41,12 +41,12 @@ export default function Contact() {
                   <br />
                 </>
               )}
-              <a
+              <div
                 className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
+                // href={"mailto:" + contactInfo.email_address}
               >
                 {contactInfo.email_address}
-              </a>
+              </div>
               <br />
               <br />
               <SocialMedia />

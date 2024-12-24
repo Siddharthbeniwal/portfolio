@@ -50,14 +50,16 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "My Skills",
   subTitle:
-    "An ambitious developer, always growing and refining my skills to create dynamic and comprehensive web applications.",
+    "An ambitious developer, always growing and refining my skills to create dynamic and comprehensive web applications. Proficient in:",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Developing scalable, high-performance, responsive web applications."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Optimizing code efficiency and maintainability by creating reusable components that ensure scalability, readability, and performance."
+    ),
+    emoji(
+      "⚡ Integrating RESTful APIs for seamless communication between frontend and backend systems."
     )
   ],
 
