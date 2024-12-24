@@ -106,12 +106,16 @@ export default function MyProjects() {
             <button className="close-button" onClick={closeModal}>
               &times;
             </button>
-            <video
-              controls
+
+            <iframe
+              width="640"
+              height="480"
               src={videoSrc}
-              className="video-player"
-              autoPlay
-            ></video>
+              title="Video Demo"
+              // frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
           </div>
         </Modal>
         {/* Video Modal Ends here*/}
