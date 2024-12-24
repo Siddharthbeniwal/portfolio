@@ -194,11 +194,15 @@ const bigProjects = {
       image: "project-images/food-express.png",
       projectName: "Food Ordering App",
       projectDesc:
-        "A dynamic food ordering web app developed using the MERN stack.",
+        "A dynamic food ordering web app developed using the MERN stack, integrated with Redux Toolkit for efficient state management.",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://foodexpress123.netlify.app/"
+        },
+        {
+          name: "See Video Demo",
+          url: "https://drive.google.com/file/d/11QUvA5GaTwPHY-CXkIG2jOGtNKd070Rz/view"
         }
         //  you can add extra buttons here.
       ]
@@ -243,7 +247,7 @@ const achievementSection = {
     {
       title: "Google Code-In Finalist",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "First to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
