@@ -63,6 +63,11 @@
   align-items: center;
 }
 
+.project-image > img {
+  width: 100%;
+  height: 98%;
+  border-radius: 7px;
+}
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
