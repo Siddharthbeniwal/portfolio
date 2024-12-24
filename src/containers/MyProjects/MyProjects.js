@@ -5,8 +5,6 @@ import Modal from "react-modal";
 import StyleContext from "../../contexts/StyleContext";
 import "./MyProjects.scss";
 
-// Modal.setAppElement("#root"); // Required for accessibility (set this to your app root element)
-
 export default function MyProjects() {
   const {isDark} = useContext(StyleContext);
 
