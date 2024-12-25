@@ -190,7 +190,7 @@ const openSource = {
 
 const bigProjects = {
   title: "My Projects",
-  subtitle: "Some projects that I worked on",
+  subtitle: "A collection of projects that I have worked on.",
   projects: [
     {
       image: "project-images/food-express.png",
@@ -380,7 +380,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

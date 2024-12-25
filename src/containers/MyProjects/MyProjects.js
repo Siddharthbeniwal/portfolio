@@ -108,11 +108,9 @@ export default function MyProjects() {
             </button>
 
             <iframe
-              width="640"
-              height="480"
+              className="video-box"
               src={videoSrc}
               title="Video Demo"
-              // frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
             ></iframe>
