@@ -203,7 +203,7 @@ const bigProjects = {
           url: "https://foodexpress123.netlify.app/"
         },
         {
-          name: "See Video Demo",
+          name: "Watch Demo Video",
           url: "https://drive.google.com/file/d/11QUvA5GaTwPHY-CXkIG2jOGtNKd070Rz/preview"
         },
         {
@@ -222,6 +222,14 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://siddharth-todolist.netlify.app/"
+        },
+        {
+          name: "Watch Demo Video",
+          url: "https://drive.google.com/file/d/1lj7HrmCRd-ztdYClOm2AzeVmLQz57QY5/preview"
+        },
+        {
+          name: "Go to Repo",
+          url: "https://github.com/Siddharthbeniwal/to-do-list"
         }
       ]
     },
@@ -234,6 +242,14 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://siddharth-textstyler.netlify.app/"
+        },
+        {
+          name: "Watch Demo Video",
+          url: "https://drive.google.com/file/d/1fxHStGuBI7hqwf1J1Ak6BSw2WFfq1ZPj/preview"
+        },
+        {
+          name: "Go to Repo",
+          url: "https://github.com/Siddharthbeniwal/TextStyler"
         }
       ]
     }

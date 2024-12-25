@@ -95,7 +95,7 @@ export default function MyProjects() {
                               isDark ? "dark-mode project-tag" : "project-tag"
                             }
                             onClick={() =>
-                              link.name === "See Video Demo"
+                              link.name === "Watch Demo Video"
                                 ? openModal(link.url)
                                 : window.open(link.url, "_blank").focus()
                             }
