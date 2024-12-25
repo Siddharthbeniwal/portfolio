@@ -78,6 +78,10 @@
   margin-top: 0.5rem;
 }
 
+.dark-mode .education-text-bullets > ul > li {
+  color: #ffffff !important;
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {

@@ -205,8 +205,10 @@ const bigProjects = {
         {
           name: "See Video Demo",
           url: "https://drive.google.com/file/d/11QUvA5GaTwPHY-CXkIG2jOGtNKd070Rz/preview"
-          // url: "https://drive.google.com/file/d/11QUvA5GaTwPHY-CXkIG2jOGtNKd070Rz/view"
-          // url: "/project-videos/food-express-demo.mp4"
+        },
+        {
+          name: "Go to Repo",
+          url: "https://github.com/Siddharthbeniwal/Food-Express"
         }
         //  you can add extra buttons here.
       ]

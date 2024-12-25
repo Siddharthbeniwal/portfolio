@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import Modal from "react-modal";
@@ -20,6 +20,18 @@ export default function MyProjects() {
     setModalOpen(false);
     setVideoSrc("");
   };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = ""; // Re-enable scrolling
+    }
+
+    return () => {
+      document.body.style.overflow = ""; // Clean up when component unmounts or modal closes
+    };
+  }, [isModalOpen]);
 
   return (
     <Fade bottom duration={1000} distance="20px">
