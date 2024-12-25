@@ -10,15 +10,18 @@ export default function MyProjects() {
 
   const [isModalOpen, setModalOpen] = useState(false);
   const [videoSrc, setVideoSrc] = useState("");
+  const [isVideoLoading, setVideoLoading] = useState(false);
 
   const openModal = videoUrl => {
     setVideoSrc(videoUrl);
+    setVideoLoading(true);
     setModalOpen(true);
   };
 
   const closeModal = () => {
     setModalOpen(false);
     setVideoSrc("");
+    setVideoLoading(false);
   };
 
   useEffect(() => {
@@ -119,12 +122,19 @@ export default function MyProjects() {
               &times;
             </button>
 
+            {isVideoLoading && (
+              <div className="loading-spinner">
+                Loading video...
+              </div>
+            )}
+
             <iframe
               className="video-box"
               src={videoSrc}
               title="Video Demo"
               allow="autoplay; encrypted-media"
               allowFullScreen
+              onLoad={() => setVideoLoading(false)}
             ></iframe>
           </div>
         </Modal>
