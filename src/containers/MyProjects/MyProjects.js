@@ -3,6 +3,8 @@ import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import Modal from "react-modal";
 import StyleContext from "../../contexts/StyleContext";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import loadingSpinner from "../../assets/lottie/loadingSpinner.json";
 import "./MyProjects.scss";
 
 export default function MyProjects() {
@@ -124,7 +126,8 @@ export default function MyProjects() {
 
             {isVideoLoading && (
               <div className="loading-spinner">
-                Loading video...
+                <DisplayLottie animationData={loadingSpinner} /> 
+                Loading video
               </div>
             )}
 
