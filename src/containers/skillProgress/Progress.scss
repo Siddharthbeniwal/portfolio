@@ -7,10 +7,12 @@
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
+  overflow: hidden;
 }
 .meter > span {
   display: block;
   height: 100%;
+  width: 0; // Start at 0 for animation
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 20px;
@@ -18,11 +20,36 @@
   background-color: $progressBarSpanBG;
   position: relative;
   overflow: hidden;
+  transition: width 1.25s ease-in-out;
 }
 .skill {
   font-weight: bold;
   line-height: 3.5vw;
 }
+
+
+// .meter {
+//   height: 20px;
+//   position: relative;
+//   background: $progressBarBackground;
+//   border-radius: 25px;
+//   overflow: hidden;
+// }
+
+// .meter > span {
+//   display: block;
+//   height: 100%;
+//   width: 0;
+//   border-radius: 25px;
+//   background-color: $progressBarSpanBG;
+//   transition: width 1.25s ease-in-out;
+// }
+
+// .skill {
+//   font-weight: bold;
+//   line-height: 3.5vw;
+// }
+
 .skill-bars {
   font-size: 28px;
   width: 40%;
