@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 200 // Set animation duration as per your animation
 };
@@ -150,7 +150,7 @@ const techStack = {
     },
     {
       Stack: "Node JS",
-      progressPercentage: "38%"
+      progressPercentage: "35%"
     },
     {
       Stack: "Database",

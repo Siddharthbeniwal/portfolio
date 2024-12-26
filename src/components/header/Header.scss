@@ -36,6 +36,9 @@
 
 .grey-color {
   color: $subTitle;
+  .dark-mode {
+    color: $textColor;
+  }
 }
 
 .header li a {
@@ -62,7 +65,6 @@
 
 .header .logo-name {
   font-family: "Agustina Regular";
-  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
@@ -72,6 +74,7 @@
 /* menu */
 
 .header .menu {
+  font-weight: bold;
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
